@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Morad</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- header menu -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Morad</a>
+            </div>
+
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Landing</a></li>
+                    <li><a href="#aboutme" onclick="seleccionar()">About me</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+
+            </div>
+            
+
+        </header>
+    </div>
+
+
+    <!--inicio-->
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/logo.webp" alt="logo de morad">
+            </div>
+            <h1>Morad El Mourabit</h1>
+            <h2>Multiplatform application developer</h2>
+            <div class="redes">
+                <a href="https://play.google.com/store/apps/dev?id=6698387086156471143"  target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                <a href="https://github.com/MoradElm96" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/morad-el-mourabit-667596211/?original_referer=" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                <a href="https://www.youtube.com/@Morad_Tech_Haven" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/moraad_96/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--about me-->
+    <section id="aboutme" class="aboutme">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hi, my name is Morad </span>I am a junior developer specialized in multi-platform application development, having recently completed a higher degree in the field. I have mainly worked with Java, but I am eager to learn and develop my skills in the field.</p>
+       
+            <div class="fila">
+                <!---datos personales-->
+                <div class="col">
+                    <h3>Personal information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday: </strong>
+                            08/1996
+                        </li>
+                        <li>
+                            <strong>E-Mail: </strong>
+                            moradelm1996@gmail.com
+                        </li>
+                        <li>
+                            <strong>Location: </strong>
+                            Madrid,Spain
+                        </li>
+                        <li>
+                            <strong>WebSite: </strong>
+                        </li>
+                        <li>
+                            <strong>Profession: </strong>
+                            Developer
+                        </li>
+                    </ul>
+                </div>
+
+                <!---intereses-->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Healthy lifestyle</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                             <span>Computing</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>80s 90s 00s R&b Music</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span> Hiking</span>
+                        </div>
+                       
+                        <div class="interes">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Personal Development</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <form action="php/cv.php"  method="get">
+           
+
+            <input type="hidden" name="file" value="cv.pdf">
+ 
+                <button>
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+            </form>
+            
+
+        </div>
+    </section>
+
+    <!---skills-->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Tenologias que sabes-->
+            <div class="col">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="barra-skill">
+                        <div class="progreso java">
+                            <span>65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Html & Css</span>
+                    <div class="barra-skill">
+                        <div class="progreso htmlcss">
+                            <span>40%</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+        </div>
+
+         <!-- Tenologias que sabes-->
+         <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+                <span>Microsoft office</span>
+                <div class="barra-skill">
+                    <div class="progreso microsoft">
+                        <span>52%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Adobe premiere</span>
+                <div class="barra-skill">
+                    <div class="progreso adobe">
+                        <span>35%</span>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+</section>
+
+<!--curriculum-->
+<section id="curriculum" class="curriculum">
+
+    <div class="contenido-seccion">
+        <h2>Resume</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Education</h3>
+                <div class="item izq">
+                    <h4>Technological baccalaureate</h4>
+                    <span class="casa">IES Clara Campoamor</span>
+                    <span class="fecha">2013 - 2015</span>
+                    <p> I completed the scientific-technological high school with interest in engineering and applied sciences. I have acquired skills in mathematics, physics, chemistry, technical drawing and computer science</p>
+                    <div class="conectori">
+                        <div class="circuloi">
+
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="item izq">
+                    <h4>Technical degree in multiplatform application development</h4>
+                    <span class="casa">IES El Cañaveral</span>
+                    <span class="fecha">2021 - 2023</span>
+                    <p> I am a graduate of the higher vocational training course in cross-platform application development. I have learned how to design user interfaces, program services and processes, and develop mobile applications and games for different platforms (not only Android or IOS) using specific technologies. I have mastered C# for interface design and Java as my main programming language.</p>
+                    <div class="conectori">
+                        <div class="circuloi">                           
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+            <div class="col derecha">
+                <h3>Working experience</h3>
+                <div class="item der">
+                    <h4>Railroad industry technician</h4>
+                    <span class="casa">Patentes Talgo, SAU</span>
+                    <span class="fecha">12/2019 - 10/2020</span>
+                    <p>High-speed train manufacturing line assembly activities</p>
+                    <div class="conectord">
+                        <div class="circulod">
+
+                        </div>
+                    </div>
+                
+                </div>
+<!--
+                <div class="item der">
+                    <h4>Technical degree in multiplatform application development</h4>
+                    <span class="casa">IES El Cañaveral</span>
+                    <span class="fecha">2021 - 2023</span>
+                    <p> I am a graduate of the higher vocational training course in cross-platform application development. I have learned how to design user interfaces, program services and processes, and develop mobile applications and games for different platforms (not only Android or IOS) using specific technologies. I have mastered C# for interface design and Java as my main programming language.</p>
+                    <div class="conectord">
+                        <div class="circulod">                           
+                        </div>
+                    </div>
+                
+                </div>
+            -->
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!--portafolio-->
+
+<section id="portfolio" class="portfolio">
+
+<div class="contenido-seccion">
+    <h2>Portfolio</h2>
+    <div class="galeria">
+        <div class="proyecto">
+
+            <a href="https://www.youtube.com/shorts/uejfwzJLaF4">
+                <img src="img/imgJuego.webp" alt="imagen foto proyecto">
+          
+            
+            <div class="overlay">
+                <h3>Tic Tac Toe Rapers</h3>
+                <p>Basic tic tac toe game based on rap artists</p>
+            </div>
+            </a>
+
+        </div>
+        <div class="proyecto">
+            <img src="img/ChatSocket.jpg" alt="imagen foto proyecto">
+            <div class="overlay">
+                <h3>Chat java</h3>
+                <p>Chat based on the Tcp protocol realized in java</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!--seccion de contacto-->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contact</h2>
+      
+        <div class="fila">
+             
+            <!--formulario-->
+
+
+            <div class="col"> 
+                
+        <form action="php/contacto.php"  method="post">
+           
+                <input type="text" name="name" placeholder="Your name">
+                <input type="text" name="phone"  placeholder="Phone number">
+                <input type="text" name="email" placeholder="Your mail address">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit" name="submit">
+                     Send Message <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+
+                </form>
+            </div>
+
+             
+           
+            <!--mapa-->
+<div class="col">
+  <!--  <img src="img/madrid.png" alt="ubicacion">-->
+    <div class="info">
+        <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+               Móstoles, Comunidad de Madrid
+            </li>
+            <li>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                +34 632 33 80 32
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                Email: moradelm1996@gmail.com
+            </li>
+        </ul>
+    </div>
+
+</div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://play.google.com/store/apps/dev?id=6698387086156471143"  target="_blank"><i class="fa-brands fa-google-play"></i></a>
+        <a href="https://github.com/MoradElm96" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/morad-el-mourabit-667596211/?original_referer=" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+        <a href="https://www.youtube.com/@Morad_Tech_Haven" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/moraad_96/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+    // Verificar si la variable de sesión 'exito' existe
+    if(<?php echo isset($_SESSION['exito']) ? 'true' : 'false' ?>) {
+        // Eliminar la variable de sesión 'exito'
+        <?php unset($_SESSION['exito']) ?>;
+        // Mostrar un mensaje de éxito en la página
+        alert('¡El formulario se envió correctamente!');
+    }
+</script>
+
+</body>
+
+
+
+
+</html>
