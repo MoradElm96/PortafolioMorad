@@ -127,20 +127,14 @@
                 </div>
 
             </div>
-
-            <form action="php/cv.php"  method="get">
            
-
-            <input type="hidden" name="file" value="cv.pdf">
- 
+             <a href="doc/cv.pdf" download>
                 <button>
-                Download CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
-
-            </form>
+                  Download CV <i class="fa-solid fa-download"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
             
-
         </div>
     </section>
 
@@ -300,6 +294,20 @@
                 <p>Chat based on the Tcp protocol realized in java</p>
             </div>
         </div>
+
+        <!--/-->
+        <div class="proyecto">
+            <a href="https://moradelm96.github.io/WeatherApplication">
+                <img src="img/miniaturatiempo.png" alt="imagen foto proyecto">
+          
+            
+            <div class="overlay">
+                <h3>Web para ver tiempo de distintas zonas</h3>
+                <p>Pequeña web que muestra el tiempo de distintas ciudades mediante consumi de api de openweathermap</p>
+            </div>
+            </a>
+        </div>
+
     </div>
 </div>
 
@@ -377,15 +385,7 @@
 
 <script src="script.js"></script>
 
-<script>
-    // Verificar si la variable de sesión 'exito' existe
-    if(<?php echo isset($_SESSION['exito']) ? 'true' : 'false' ?>) {
-        // Eliminar la variable de sesión 'exito'
-        <?php unset($_SESSION['exito']) ?>;
-        // Mostrar un mensaje de éxito en la página
-        alert('¡El formulario se envió correctamente!');
-    }
-</script>
+
 
 </body>
 
