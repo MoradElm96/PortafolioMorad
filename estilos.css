@@ -576,7 +576,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8),rgba(28,182,152,.8));
+    background: linear-gradient(rgba(124, 131, 253, 0.8),rgba(124, 131, 253, 0.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
